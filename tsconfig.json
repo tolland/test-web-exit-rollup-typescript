@@ -1,7 +1,7 @@
 {
   "include": ["src/**/*"],
   "compilerOptions": {
-    "target": "es2016",
+    "target": "ES2020",
     "module": "commonjs",
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
@@ -10,6 +10,14 @@
     "skipLibCheck": true,
     "baseUrl": "src",
     "outDir": "dist",
-    "sourceMap": true
+    "sourceMap": true,
+    "paths": {
+      "@WebExtension/*": [
+        "WebExtension/*"
+      ],
+      "@lib": [
+        "lib/*"
+      ]
+    }
   },
 }
