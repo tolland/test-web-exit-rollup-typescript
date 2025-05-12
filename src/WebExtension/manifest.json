@@ -1,0 +1,34 @@
+{
+  "manifest_version": 3,
+  "name": "test-example-web-ext",
+  "version": "0.1.0",
+  "background": {
+    "type": "module",
+    "scripts": [
+      "background.js"
+    ]
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "strict_min_version": "127.0",
+      "id": "test@example.com"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*/*"
+      ],
+      "js": [
+        "content-script.js"
+      ]
+    }
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "permissions": [
+    "activeTab",
+    "tabs"
+  ]
+}
