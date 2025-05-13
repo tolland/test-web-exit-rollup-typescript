@@ -2,21 +2,20 @@
   "include": ["src/**/*"],
   "compilerOptions": {
     "target": "ES2020",
-    "module": "commonjs",
+    "module": "esnext",
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "resolveJsonModule": true,
     "strict": true,
     "skipLibCheck": true,
-    "baseUrl": "src",
-    "outDir": "dist",
-    "sourceMap": true,
+    "moduleResolution": "node",
+    "baseUrl": ".",
     "paths": {
       "@WebExtension/*": [
-        "WebExtension/*"
+        "./src/WebExtension/*"
       ],
-      "@lib": [
-        "lib/*"
+      "@web-lib/*": [
+        "./src/lib/*"
       ]
     }
   },

@@ -1,0 +1,1 @@
+{"version":3,"file":"sidebar.js","sources":["../../src/sidebar/sidebar.ts"],"sourcesContent":["/**\n * This is a dummy for to demonstrate a nested subdir handling by rollup\n */\n\nexport const dummy = 'dummy';\n"],"names":[],"mappings":"AAAA;;AAEG;AAEI,MAAM,KAAK,GAAG;;;;"}
